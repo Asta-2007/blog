@@ -1,0 +1,5 @@
+.env
+test.json
+main_test.go
+/tmp
+/client_req
