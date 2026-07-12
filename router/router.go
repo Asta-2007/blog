@@ -20,11 +20,12 @@ func CORSMiddleware() gin.HandlerFunc {
 		origin := c.Request.Header.Get("Origin")
 
 		allowedOrigins := map[string]bool{
-			"http://127.0.0.1:5500":          true,
-			"http://localhost:5500":          true,
-			"http://127.0.0.1:8000":          true,
-			"http://localhost:8000":          true,
-			"https://dockerio-blog.hf.space": true, // <- TAMBAH URL HUGGING FACE ANDA DI SINI
+			"http://127.0.0.1:5500":                         true,
+			"http://localhost:5500":                         true,
+			"http://127.0.0.1:8000":                         true,
+			"http://localhost:8000":                         true,
+			"https://dockerio-blog.hf.space":                true, // <- TAMBAH URL HUGGING FACE ANDA DI SINI
+			"https://kelompok-13.ansen25.daffaarfiyandi.id": true,
 		}
 
 		if allowedOrigins[origin] {
